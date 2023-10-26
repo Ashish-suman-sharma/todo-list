@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>To-Do List App</title>
+    <link rel="icon" type="image/x-icon" href="png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png">
+</head>
+<body>
+    <div class="calendar-button" onclick="openCalendar()">&#128197;</div>
+    <h1>To-Do List</h1>
+    <form id="task-form">
+        <input type="text" id="task" placeholder="Add a new task..." required>
+        <button type="submit">Add</button>
+    </form>
+    <ul id="task-list"></ul>
+     <!-- Hidden calendar container -->
+     <div class="calendar-container" id="calendar-container">
+        <table class="calendar">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+            <tbody id="calendar-body">
+                <!-- Days of the month will be inserted here via JavaScript -->
+            </tbody>
+        </table>
+        <button class="close-button" onclick="closeCalendar()">Close</button>
+    </div>
+</body>
+<script src="cal.js"></script>
+<script src="script.js"></script>
+</html>
